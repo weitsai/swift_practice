@@ -15,3 +15,7 @@ var userName = "weitsai"
 println("Hello, " + userName)
 
 
+// 宣告變數自定型態
+var old:Double = 23
+// 輸出後會有浮點數
+println(old);
