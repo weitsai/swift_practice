@@ -19,3 +19,9 @@ println("Hello, " + userName)
 var old:Double = 23
 // 輸出後會有浮點數
 println(old);
+
+
+// 宣告 final 的變數
+let height:Int = 169
+// len 宣告的變數不可以更改數值會發生錯誤
+// height = 200
