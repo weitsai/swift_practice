@@ -31,7 +31,7 @@ swift_practice
 
 1. 不同型態的問題
   因為 Swift 不像 Java 提供向上轉型的機制, 所以當兩個不同型態的型態共用時會發生錯誤.
-  1. 範例一 字串和整數輸出
+  1. 範例一 字串(String) 和整數(Int) 輸出
   ```swift
     var userName = "weitsai"
     // weitsai
