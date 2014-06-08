@@ -3,7 +3,7 @@ swift_practice
 
 從來沒有寫過 iOS, 在 WWDC 看到新程式語言, 我想這是新手入場的好時機 XD"
 
-## 第一章
+## 第一章 基本型態
 1. 基本輸出
   ```swift
   Pringln("Hello, weitsai")
