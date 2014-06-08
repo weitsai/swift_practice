@@ -41,7 +41,7 @@
 		1C7C61001942DCC900AD26B3 = {
 			isa = PBXGroup;
 			children = (
-				1C7C610B1942DCC900AD26B3 /* ch1_HelloWorld */,
+				1C7C610B1942DCC900AD26B3 /* ch1 */,
 				1C7C610A1942DCC900AD26B3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,11 +54,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1C7C610B1942DCC900AD26B3 /* ch1_HelloWorld */ = {
+		1C7C610B1942DCC900AD26B3 /* ch1 */ = {
 			isa = PBXGroup;
 			children = (
 				1C7C610C1942DCC900AD26B3 /* main.swift */,
 			);
+			name = ch1;
 			path = ch1_HelloWorld;
 			sourceTree = "<group>";
 		};
@@ -233,6 +234,7 @@
 				1C7C61121942DCC900AD26B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
