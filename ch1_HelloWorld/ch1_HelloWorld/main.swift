@@ -27,13 +27,21 @@ let height:Int = 169
 // height = 200
 
 
-// 字串與數字相加
+// ex1. 字串與數字相加
 // 下面這段程式碼會發生錯誤 (Could not find an overload for 'old' that accepts the supplied arguments)
 //println(userName + "age was" + old + "years old")
 
 // 如果要輸出, 必須把 Int 轉成 String
+var hello:String = "Hello, "
+println(hello + userName)
 println(userName + "age was " + String(old) + " years old")
 // 也可以縮寫成這樣
 println(userName + "age was \(old) years old")
 
+// ex2. 整數加上浮點數
+var weight:Double = 42.0
+
+// 下面程式碼會發生 Could not find member 'convertFromStringInterpolationSegment' 錯誤
+//println("hieght + weight = \(weight + height)")
+println("hieght + weight = \(Int(weight) + height)");
 

@@ -48,3 +48,13 @@ swift_practice
     // 解決方案 2
     println(userName + "age was \(old) years old")
   ```
+
+  1. 範例二 整數(Int) 和浮點數(Double) 相加
+  ```swift
+    // 整數加上浮點數
+    var height:Int = 169
+    var weight:Double = 42.0;
+    // 下面這段程式碼會發生錯誤(Could not find member 'convertFromStringInterpolationSegment')
+    //println("hieght + weight = \(weight + height)")
+    println("hieght + weight = \(Int(weight) + height)")
+  ```
