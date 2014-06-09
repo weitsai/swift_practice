@@ -58,3 +58,26 @@ swift_practice
       //println("hieght + weight = \(weight + height)")
       println("hieght + weight = \(Int(weight) + height)")
     ```
+1. 陣列(Array)
+  ```swift
+    // 宣告陣列
+    var userNames = ["weitsai", "afu", "winni"]
+    // [weitsai, afu, winni]
+    println(userNames)
+    // weitsai
+    println(userNames[0])
+  ```
+
+1. 字典(dictionary)
+  ```swift
+    // 宣告字典(dictionary)
+    var colorsCode = [
+        "red": "#FF0000",
+        "yellow": "#00FF00",
+        "blue": "#0000FF"
+    ]
+    // [red: #FF0000, yellow: #00FF00, blue: #0000FF]
+    println(colorsCode)
+    // #FF0000
+    println(colorsCode["red"])
+  ```

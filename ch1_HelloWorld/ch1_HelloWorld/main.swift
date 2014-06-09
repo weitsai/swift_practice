@@ -45,3 +45,23 @@ var weight:Double = 42.0
 //println("hieght + weight = \(weight + height)")
 println("hieght + weight = \(Int(weight) + height)");
 
+
+// 宣告陣列
+var userNames = ["weitsai", "afu", "winni"]
+// [weitsai, afu, winni]
+println(userNames)
+// weitsai
+println(userNames[0])
+
+
+// 宣告字典(dictionary)
+var colorsCode = [
+    "red": "#FF0000",
+    "yellow": "#00FF00",
+    "blue": "#0000FF"
+]
+// [red: #FF0000, yellow: #00FF00, blue: #0000FF]
+println(colorsCode)
+// #FF0000
+println(colorsCode["red"])
+
