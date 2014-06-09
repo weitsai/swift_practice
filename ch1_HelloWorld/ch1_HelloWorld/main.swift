@@ -53,6 +53,14 @@ println(userNames)
 // weitsai
 println(userNames[0])
 
+userNames += "eric"
+// [weitsai, afu, winni, eric]
+println(userNames)
+
+userNames.append("marty")
+//// [weitsai, afu, winni, eric, marty]
+println(userNames)
+
 
 // 宣告字典(dictionary)
 var colorsCode = [

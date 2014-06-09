@@ -66,6 +66,22 @@ swift_practice
     println(userNames)
     // weitsai
     println(userNames[0])
+
+
+    // 宣告陣列
+    var userNames = ["weitsai", "afu", "winni"]
+    // [weitsai, afu, winni]
+    println(userNames)
+    // weitsai
+    println(userNames[0])
+
+    userNames += "eric"
+    // [weitsai, afu, winni, eric]
+    println(userNames)
+
+    userNames.append("marty")
+    //// [weitsai, afu, winni, eric, marty]
+    println(userNames)
   ```
 
 1. 字典(dictionary)
