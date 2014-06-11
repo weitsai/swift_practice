@@ -10,43 +10,52 @@ import Foundation
 
 println("Hello, World!")
 
-// 宣告變數自動決定型態
+/* 宣告變數, 自動決定型態 */
 var userName = "weitsai"
 println("Hello, " + userName)
 
 
-// 宣告變數自定型態
+/* 宣告變數並指定型態 */
 var old:Double = 23
-// 輸出後會有浮點數
+// 23.0
 println(old);
 
 
-// 宣告 final 的變數
+/** 宣告常數, 宣告後不可以在更動 */
 let height:Int = 169
 // len 宣告的變數不可以更改數值會發生錯誤
-// height = 200
+height = 200
 
 
-// ex1. 字串與數字相加
-// 下面這段程式碼會發生錯誤 (Could not find an overload for 'old' that accepts the supplied arguments)
-//println(userName + "age was" + old + "years old")
+/**
+ * 不同型態共同使用會發生錯誤
+**/
 
-// 如果要輸出, 必須把 Int 轉成 String
-var hello:String = "Hello, "
-println(hello + userName)
+/* ex1: 下面這段程式碼會發生下列錯誤 (String + Int)
+ (Could not find an overload for 'old' that accepts the supplied arguments)
+**/
+println(userName + "age was" + old + "years old")
+
+/* 解決方案一 */
+// weitsaiage was 23.0 years old
 println(userName + "age was " + String(old) + " years old")
-// 也可以縮寫成這樣
+/* 解決方案二 */
+// weitsaiage was 23.0 years old
 println(userName + "age was \(old) years old")
 
-// ex2. 整數加上浮點數
 var weight:Double = 42.0
 
-// 下面程式碼會發生 Could not find member 'convertFromStringInterpolationSegment' 錯誤
-//println("hieght + weight = \(weight + height)")
+/* ex2: 下面這段程式碼會發生下列錯誤 (Double + Int)
+ (Could not find member 'convertFromStringInterpolationSegment')
+**/
+println("hieght + weight = \(weight + height)")
+
+/* 解決方案 */
+// hieght + weight = 211
 println("hieght + weight = \(Int(weight) + height)");
 
 
-// 宣告陣列
+/* 宣告陣列 */
 var userNames = ["weitsai", "afu", "winni"]
 // [weitsai, afu, winni]
 println(userNames)
@@ -58,11 +67,11 @@ userNames += "eric"
 println(userNames)
 
 userNames.append("marty")
-//// [weitsai, afu, winni, eric, marty]
+// [weitsai, afu, winni, eric, marty]
 println(userNames)
 
 
-// 宣告字典(dictionary)
+/* 宣告字典(dictionary) */
 var colorsCode = [
     "red": "#FF0000",
     "yellow": "#00FF00",
