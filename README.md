@@ -107,6 +107,15 @@ MAC OS: 10.9.3
     userNames.append("marty")
     // [weitsai, afu, winni, eric, marty]
     println(userNames)
+
+    /* userNames[n, m] 取得到 n, m 的值, 不包含 m 本身 */
+    // [afu, winni]
+    println(userNames[1..3])
+
+    /* 下面陣列使用的索引值改為負數, 發生了神奇的事情 */
+    var numbers = [1, 2, 3, 4, 5, 6]
+    // [4294967324, 6, 16, 1, 2, 3, 4, 5]
+    println(numbers[-3..5])
   ```
 
 1. 字典(dictionary)
