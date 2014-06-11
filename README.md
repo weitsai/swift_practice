@@ -109,3 +109,53 @@ MAC OS: 10.9.3
     // #FF0000
     println(colorsCode["red"])
   ```
+
+## 第二章 邏輯控制
+1. 比較符號
+  比較符號的使用方式：
+  1. 「==」 比較左右兩邊的內容是否相等
+
+    ```swift
+      var user = "weitsai"
+      // true
+      println("weitsai" == user)
+      // true
+      println(user == "weitsai")
+      // true
+      println(user == user)
+    ```
+  1. 「!=」 比較左右兩邊的內容是否不相等
+
+    ```swift
+      var user = "weitsai"
+      // false
+      println("weitsai" != user)
+      // false
+      println(user != "weitsai")
+      // false
+      println(user != user)
+    ```
+  1. 「===」比較左右兩邊的記憶體位置是否相等
+    下面範例我也無法解釋.... (等官方或高手解答)
+
+    ```swift
+      var user = "weitsai"
+      // false
+      println("weitsai" === user)
+      // false
+      println(user === "weitsai")
+      // false
+      println(user === user)
+    ```
+  1. 「!==」比較左右兩邊的記憶體位置是否不相等
+
+    ```swift
+      var user = "weitsai"
+      // true
+      println("weitsai" !== user)
+      // true
+      println(user !== "weitsai")
+      // true
+      println(user !== user)
+    ```
+
