@@ -1,4 +1,4 @@
-swift_practice
+weitsai 的 swift 練習筆記
 ==============
 
 從來沒有寫過 iOS, 在 WWDC 看到新程式語言, 我想這是新手入場的好時機 XD"
