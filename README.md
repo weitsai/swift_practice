@@ -50,7 +50,9 @@ MAC OS: 10.9.3
       println(userName)
 
       var old = 23;
+      // 23
       println(old);
+
       // 下面這段程式碼會發生錯誤（Could not find an overload for 'old' that accepts the supplied arguments）
       println(userName + "age was" + old + "years old")
 
@@ -63,16 +65,18 @@ MAC OS: 10.9.3
 
   1. 範例二 整數(Int) 和浮點數(Double) 相加
     ```swift
-      // 整數加上浮點數
       var height:Int = 169
       var weight:Double = 42.0;
-      // 下面這段程式碼會發生錯誤(Could not find member 'convertFromStringInterpolationSegment')
-      //println("hieght + weight = \(weight + height)")
+
+      //下面這段程式碼會發生錯誤(Could not find member 'convertFromStringInterpolationSegment')
+      println("hieght + weight = \(weight + height)")
+
+      // 解決方案
       println("hieght + weight = \(Int(weight) + height)")
     ```
 1. 陣列(Array)
   ```swift
-    // 宣告陣列
+    /* 宣告陣列 */
     var userNames = ["weitsai", "afu", "winni"]
     // [weitsai, afu, winni]
     println(userNames)
@@ -80,7 +84,7 @@ MAC OS: 10.9.3
     println(userNames[0])
 
 
-    // 宣告陣列
+    /* 宣告陣列 */
     var userNames = ["weitsai", "afu", "winni"]
     // [weitsai, afu, winni]
     println(userNames)
@@ -92,13 +96,13 @@ MAC OS: 10.9.3
     println(userNames)
 
     userNames.append("marty")
-    //// [weitsai, afu, winni, eric, marty]
+    // [weitsai, afu, winni, eric, marty]
     println(userNames)
   ```
 
 1. 字典(dictionary)
   ```swift
-    // 宣告字典(dictionary)
+    /* 宣告字典(dictionary) */
     var colorsCode = [
         "red": "#FF0000",
         "yellow": "#00FF00",
