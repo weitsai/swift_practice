@@ -8,6 +8,11 @@ MAC OS: 10.9.3
 
 ## 該小心的雷：
 1. 註解的時候如果跳出可用 function 選單時, 請別急著切換中文打字, 會強制關閉 xcode ....
+1. 下面這段程式碼也會錯誤 ([參考來源](http://swiftwtf.tumblr.com/post/88381298933/it-crashes-repl))
+```swift
+  var test:Any[] = []
+  test.append(test)
+```
 
 
 ## 第一章 基本型態
