@@ -112,6 +112,11 @@ MAC OS: 10.9.3
     var numbers = [1, 2, 3, 4, 5, 6]
     // [4294967324, 6, 16, 1, 2, 3, 4, 5]
     println(numbers[-3..5])
+
+    /* 複合式陣列 */
+    var test = ["weitsai", 23]
+    // (weitsai,23)
+    println(test)
   ```
 
 1. 字典(dictionary)
