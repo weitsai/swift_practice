@@ -92,14 +92,6 @@ MAC OS: 10.9.3
     // weitsai
     println(userNames[0])
 
-
-    /* 宣告陣列 */
-    var userNames = ["weitsai", "afu", "winni"]
-    // [weitsai, afu, winni]
-    println(userNames)
-    // weitsai
-    println(userNames[0])
-
     userNames += "eric"
     // [weitsai, afu, winni, eric]
     println(userNames)
