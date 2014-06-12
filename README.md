@@ -104,6 +104,10 @@ MAC OS: 10.9.3
     // [afu, winni]
     println(userNames[1..3])
 
+    /* userNames[n...m] 取得到 n, m 的值, 包含 m 本身 */
+    // [afu, winni, eric]
+    println(userNames[1...3])
+
     /* 下面陣列使用的索引值改為負數, 發生了神奇的事情 */
     var numbers = [1, 2, 3, 4, 5, 6]
     // [4294967324, 6, 16, 1, 2, 3, 4, 5]
