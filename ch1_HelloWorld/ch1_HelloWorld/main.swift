@@ -4,9 +4,9 @@
 //
 //  Created by weitsai on 2014/6/7.
 //  Copyright (c) 2014年 weitsai. All rights reserved.
-//
 
 import Foundation
+
 
 println("Hello, World!")
 
@@ -24,7 +24,7 @@ println(old);
 /** 宣告常數, 宣告後不可以在更動 */
 let height:Int = 169
 // len 宣告的變數不可以更改數值會發生錯誤
-height = 200
+//height = 200
 
 
 /**
@@ -34,7 +34,7 @@ height = 200
 /* ex1: 下面這段程式碼會發生下列錯誤 (String + Int)
  (Could not find an overload for 'old' that accepts the supplied arguments)
 **/
-println(userName + "age was" + old + "years old")
+//println(userName + "age was" + old + "years old")
 
 /* 解決方案一 */
 // weitsaiage was 23.0 years old
@@ -48,7 +48,7 @@ var weight:Double = 42.0
 /* ex2: 下面這段程式碼會發生下列錯誤 (Double + Int)
  (Could not find member 'convertFromStringInterpolationSegment')
 **/
-println("hieght + weight = \(weight + height)")
+//println("hieght + weight = \(weight + height)")
 
 /* 解決方案 */
 // hieght + weight = 211
@@ -70,14 +70,23 @@ userNames.append("marty")
 // [weitsai, afu, winni, eric, marty]
 println(userNames)
 
-/* userNames[n, m] 取得到 n, m 的值, 不包含 m 本身 */
+/* userNames[n..m] 取得到 n, m 的值, 不包含 m 本身 */
 // [afu, winni]
 println(userNames[1..3])
+
+/* userNames[n...m] 取得到 n, m 的值, 包含 m 本身 */
+// [afu, winni, eric]
+println(userNames[1...3])
 
 /* 下面陣列使用的索引值改為負數, 發生了神奇的事情 */
 var numbers = [1, 2, 3, 4, 5, 6]
 // [4294967324, 6, 16, 1, 2, 3, 4, 5]
 println(numbers[-3..5])
+
+/* 複合式陣列 */
+var test = ["weitsai", 23]
+// (weitsai,23)
+println(test)
 
 
 /* 宣告字典(dictionary) */
@@ -90,4 +99,3 @@ var colorsCode = [
 println(colorsCode)
 // #FF0000
 println(colorsCode["red"])
-
